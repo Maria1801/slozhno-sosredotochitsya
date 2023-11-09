@@ -2,13 +2,12 @@
 .page {
   background-size: cover;
   background-position: center;
-  background-image: var(--header-image);
+  background-image: var(--background-image);
   background-attachment: fixed;
   display: table;
   padding: 20px;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
 }
 
 .header {
