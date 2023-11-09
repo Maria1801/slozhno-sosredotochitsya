@@ -1,5 +1,420 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-size: cover;
+  background-position: center;
+  background-image: var(--header-image);
+  background-attachment: fixed;
+  display: table;
+  padding: 20px;
+}
+
+.header {
+  display: grid;
+  min-height: 768px;
+}
+
+.elements_decor{
+  /* position: absolute; */
+  /* top: 25px;
+  right: 20px; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.REC {
+  color: #FF0070;
+  display: var(--rec);
+}
+
+.elements {
+  @media (min-width: 375px) and (max-width: 768px) {
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: 768px) {
+    height: 26px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 329px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.dot_wrapper {
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--decor);
+  border-inline-end: 1px solid var(--decor);
+  justify-content: center;
+  align-items: center;
+  color: var(--dot);
+}
+
+.dot_wrapper::after{
+  content: var(--dot_1);
+}
+
+.block_header {
+  display: grid;
+  @media (min-width: 375px) and (max-width: 1024px) {
+    margin-top: 350px;
+    grid-template-rows: 260px 300px;
+    gap: 80px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: -140px;
+    grid-template-rows: 300px 100px;
+    gap: 20px;
+  }
+  @media (min-width: 1024px) {
+    
+    gap: 60px;
+  }
+}
+
+.left_corner {
+  margin-bottom: 20px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--decor);
+  border-left: 1px solid var(--decor);
+}
+
+.right_wrapper {
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+}
+
+.right_corner {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--decor);
+  border-inline-end: 1px solid var(--decor);
+  margin-top: 80px;
+}
+
+.header__theme-menu-button {
+  color: var(--color-button);
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  background: none;
+  border: none;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  text-decoration: underline;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--border-color);
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 375px) {
+    margin-top: 40px;
+  }
+}
+
+.header__theme-menu-list {
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--text-shadow-color);
+  font-family: IBM Plex Mono;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-left: -20px;
+}
+
+.header_text {
+  color: var(--header_text-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--header_text-bc);
+  max-inline-size: 491px;
+  max-block-size: 71px;
+  max-height: 117px;
+  justify-self: center;
+
+  @media (maх-width: 375px) {
+    max-width: 355px;
+    max-height: 117px;
+    justify-self: start;
+  }
+
+  @media (min-width: 376px) and (max-width: 1024px) {
+    max-width: 364px;
+    max-height: 117px;
+    justify-self: end;
+  }
+
+  @media (min-width: 1025px) {
+    max-width: 491px;
+    max-height: 71px;
+    justify-self: end;
+  }
+}
+
+.first_card_wrapper {
+  @media (maх-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 19px;
+  }
+  @media (min-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 19px;
+  }
+}
+
+.title_content {
+  grid-row: 1 / -1;
+  color: var(--title-content);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-bottom: 20px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 236px;
+  }
+
+}
+
+.first_card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.second_card_wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  margin-bottom: 80px;
+  @media (max-width: 375px) {
+    grid-template-columns: auto;
+  }
+}
+
+.second_card_title {
+  grid-column: 1 / -1;
+  color: var(--title-content);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-bottom: 20px;
+  width: 315px;
+  margin-top: 80px;
+  @media (max-width: 375px) {
+    margin-top: 50px;
+  }
+}
+
+.second_card {
+  @media (max-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 375px) {
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
+.content_info {
+  @media (max-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+  }
+
+  @media (min-width: 375px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+}
+
+.content_info_title {
+  grid-row: 1 / -1;
+  color: var(--title-content);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.pictures_wrapper {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+.pictures {
+  @media (max-width: 375px) {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 192px 435px 287px 435px 237px;
+    grid-template-areas:
+      "image_1"
+      "image_2"
+      "image_3"
+      "image_4"
+      "image_5";
+  }
+  @media (min-width: 375px) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 315px 315px 315px;
+    grid-template-rows: 260px 315px 428px;
+    grid-template-areas:
+      "image_1 image_1 image_2"
+      "image_3 image_4 image_2"
+      "image_3 image_5 image_5";
+  }
+}
+
+.pictures img {
+  width: 100%;
+  height: 100%;
+}
+
+.image_1 {
+  @media (max-width: 375px) {
+    object-fit:cover;
+  }
+  grid-area: image_1;
+  object-fit: contain;
+}
+
+.image_2 {
+  grid-area: image_2;
+  object-fit: cover;
+}
+.image_3 {
+
+  grid-area: image_3;
+  object-fit: cover;
+}
+.image_4 {
+  grid-area: image_4;
+}
+
+.image_5 {
+  grid-area: image_5;
+}
+
+.text {
+  color: var(--text-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.title_card {
+  color: var(--title-card);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--header_text-bc);
+  margin-bottom: 20px;
+}
+
+.title_card_info {
+  color: var(--title-card-info);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  background-color: var(--header_text-bc);
+  margin-block-start: 20px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 768px;
+}
+.footer_title {
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
+  font-family: IBM Plex Mono;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
 }
