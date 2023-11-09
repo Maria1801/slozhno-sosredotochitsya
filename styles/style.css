@@ -1,4 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+* {
+  margin: 0;
+  padding: 0;
+  }
 
 .page {
   background-size: cover;
@@ -221,6 +225,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap: 19px;
+    width: 351px;
   }
   @media (width > 400px) {
     display: grid;
@@ -258,6 +263,7 @@
   margin-bottom: 80px;
   @media (width < 400px) {
     grid-template-columns: auto;
+    width: 355px;
   }
 }
 
@@ -300,6 +306,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap: 20px;
+    width: 355px;
   }
 
   @media (width > 400px) {
@@ -323,14 +330,17 @@
 .pictures_wrapper {
   display: grid;
   grid-column: 1 / -1;
+  @media (width < 400px) {
+    width: 355px;
+  }
 }
 
 .pictures {
   @media (width < 400px) {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 192px 435px 287px 435px 237px;
+    grid-template-columns: 355px;
+    grid-template-rows: 142px 355px 237px 355px 237px;
     grid-template-areas:
       "image_1"
       "image_2"
@@ -417,6 +427,10 @@
   justify-content: center;
   align-items: center;
   min-height: 768px;
+  @media (width < 400px) {
+    width: 355px;
+    height: 668px;
+  }
 }
 .footer_title {
   color: var(--title-color);
@@ -426,4 +440,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
+  @media (width < 400px) {
+    font-size: 116px;
+  }
 }
