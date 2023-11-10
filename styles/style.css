@@ -1,33 +1,37 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background-size: cover;
-  background-position: center;
-  background-image: var(--background-image);
   background-color: var(--background-color);
-  background-attachment: fixed;
   display: table;
   overflow-x: hidden;
   margin: 0 auto;
 }
 
 .header {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: grid;
-  /* min-height: 768px; */
   height: 100%;
   @media (width < 400px) {
-    margin: 10px 10px 10px 0;
+    padding: 10px 10px 10px 0;
     height: 668px;
-    width: 355px;
+    width: 375px;
   }
 
   @media (width > 400px) and (width < 1000px) {
     grid-template-rows: 260px 300px;
-    margin: 20px 20px 0px 20px;
-    width: 728px;
+    padding: 20px 20px 0px 20px;
+    width: 768px;
   }
 
   @media (width > 1000px) {
-    gap: 60px;
+    grid-template-rows: 319px 244px 160px 25px;
+    /* margin: 20px 20px 0px 20px; */
+    padding: 20px 20px 0px 20px;
+
+    height: 768px;
+    width: 1024px;
   }
 }
 
@@ -195,6 +199,10 @@
     margin-top: 173px;
     margin-left: -20px;
   }
+
+  @media (width > 1000px) {
+    margin-left: -20px;
+  }
 }
 
 .header_text {
@@ -245,6 +253,14 @@
     gap: 19px;
     width: 728px;
   }
+  @media (width > 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 19px;
+    width: 984px;
+    margin-top: 60px;
+  }
 }
 
 .title_content {
@@ -261,8 +277,10 @@
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
   }
-  @media (width > 400px) {
+  @media (width > 1000px) {
     margin-left: 20px;
+    /* margin-top: ; */
+    width: 315px;
   }
 }
 
@@ -280,10 +298,21 @@
     margin-top: 20px;
     gap: 10px;
   }
+  @media (width > 1000px) {
+    width: 649px;
+    grid-template-rows: 23px auto auto;
+  }
 }
 
 .second_card {
   @media (width > 400px) and (width < 1000px) {
+    width: 728px;
+  }
+  @media (width > 1000px) {
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    grid-template-rows: 1fr;
+    gap: 20px;
     width: 728px;
   }
 }
@@ -303,6 +332,11 @@
   }
   @media (width > 400px) and (width < 1000px) {
     width: 728px;
+  }
+  @media (width > 1000px) {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 984px;
   }
 }
 
@@ -372,13 +406,15 @@
 .pictures_wrapper {
   display: grid;
   grid-column: 1 / -1;
-  width: 355px;
   @media (width > 400px) and (width < 1000px) {
     width: 728px;
+    margin-top: 59px;
+
   }
   @media (width < 400px) {
     margin-left: 10px;
     margin-right: 10px;
+    width: 355px;
   }
   @media (width > 400px) {
     margin-left: 20px;
@@ -475,8 +511,13 @@
   @media (width < 400px) {
     height: 23px;
   }
-  @media (width > 400px) {
+  @media (width > 400px) and (width < 1000px) {
     height: 23px;
+    margin-bottom: 20px;
+  }
+  @media (width > 1000px) {
+    height: 23px;
+    /* margin-bottom: 20px; */
   }
 }
 
@@ -509,6 +550,10 @@
     height: 668px;
     width: 355px;
   }
+  @media (width > 1000px) {
+    width: 984px;
+    margin-bottom: 20px;
+  }
 }
 .footer_title {
   color: var(--title-color);
@@ -527,6 +572,10 @@
     margin-top: 418px;
     margin-left: 150px;
   }
+  @media (width > 1000px) {
+    margin-top: 274px;
+    margin-left: 277px;
+  }
 }
 .right_corner_second {
   content: "";
@@ -541,6 +590,10 @@
   @media (width > 400px) and (width < 1000px) {
     margin-top: 80px;
     margin-left: 725px;
+  }
+  @media (width > 1000px) {
+    margin-top: 80px;
+    margin-left: 979px;
   }
 }
 
@@ -560,6 +613,10 @@
   }
   @media (width > 400px) and (width < 1000px) {
     margin-top: 417px;
+    margin-left: 20px;
+  }
+  @media (width > 1000px) {
+    margin-top: 274px;
     margin-left: 20px;
   }
 }
