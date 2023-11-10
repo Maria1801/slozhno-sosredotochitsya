@@ -70,8 +70,8 @@
   font-size: 20px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decor);
-  border-inline-end: 1px solid var(--decor);
+  border-top: 1px solid var(--decorate);
+  border-inline-end: 1px solid var(--decorate);
   justify-content: center;
   align-items: center;
   color: var(--dot);
@@ -85,8 +85,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decor);
-  border-left: 1px solid var(--decor);
+  border-bottom: 1px solid var(--decorate);
+  border-left: 1px solid var(--decorate);
   @media (width < 400px) {
     margin-left: 10px;
     margin-top: -20px;
@@ -107,8 +107,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decor);
-  border-inline-end: 1px solid var(--decor);
+  border-top: 1px solid var(--decorate);
+  border-inline-end: 1px solid var(--decorate);
   margin-top: 80px;
   @media (width < 400px) {
     margin-right: 10px;
@@ -577,8 +577,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decor);
-  border-right: 1px solid var(--decor);
+  border-top: 1px solid var(--decorate);
+  border-right: 1px solid var(--decorate);
   @media (width < 400px) {
     margin-top: 40px;
     margin-left: 330px;
@@ -602,8 +602,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decor);
-  border-left: 1px solid var(--decor);
+  border-bottom: 1px solid var(--decorate);
+  border-left: 1px solid var(--decorate);
   @media (width < 400px) {
     margin-top: 250px;
   }
