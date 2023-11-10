@@ -14,7 +14,7 @@
   display: grid;
   height: 100%;
   @media (width < 400px) {
-    grid-template-rows: 230px 250px 164px;
+    grid-template-rows: 230px 247px 167px;
     padding: 10px 10px 10px 0;
     height: 678px;
     width: 375px;
@@ -351,19 +351,20 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 80px;
   @media (width < 400px) {
     margin-top: 40px;
+    margin-bottom: 0px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
   }
 }
 
-.text_second_card {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.margin_top {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .content_info {
@@ -406,7 +407,7 @@
     width: 236px;
   }
   @media (width < 400px) {
-    margin-top: -50px;
+    margin-top: -40px;
     height: 70px;
   }
 }
@@ -420,6 +421,7 @@
 
   }
   @media (width < 400px) {
+    margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
