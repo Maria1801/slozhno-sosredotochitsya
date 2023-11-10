@@ -387,7 +387,7 @@
 
 .card_second {
   @media (width < 400px) {
-    margin-top: -20px;
+    margin-top: -10px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 472px;
@@ -421,7 +421,7 @@
 
   }
   @media (width < 400px) {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
@@ -576,7 +576,7 @@
   line-height: 82.5%;
   @media (width < 400px) {
     font-size: 116px;
-    margin-top: 251px;
+    margin-top: 270px;
     height: 96px;
   }
   @media (width > 400px) and (width < 1000px) {
@@ -595,7 +595,7 @@
   border-top: 1px solid var(--color-button);
   border-right: 1px solid var(--color-button);
   @media (width < 400px) {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 330px;
   }
   @media (width > 400px) and (width < 1000px) {
@@ -620,7 +620,7 @@
   border-bottom: 1px solid var(--color-button);
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
-    margin-top: 250px;
+    margin-top: 240px;
   }
   @media (width > 400px) and (width < 1000px) {
     margin-top: 417px;
