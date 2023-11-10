@@ -367,8 +367,10 @@
 }
 
 .margin_top {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  @media (width < 400px) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .content_info {
