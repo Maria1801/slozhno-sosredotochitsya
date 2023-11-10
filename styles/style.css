@@ -568,8 +568,7 @@
   height: 100%;
   @media (width > 400px) and (width < 1000px) {
     width: 768px;
-    height: 1024px;
-    margin-bottom: 20px;
+    height: 1004px;
   }
   @media (width < 400px) {
     margin-left: 10px;
@@ -597,7 +596,7 @@
   }
   @media (width > 400px) and (width < 1000px) {
     margin-top: 418px;
-    margin-left: 150px;
+    margin-left: 180px;
     font-size: 120px;
   }
   @media (width > 1000px) {
