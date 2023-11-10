@@ -19,8 +19,8 @@ background-size: cover; */
   margin: 0;
   background-color: var(--background-color);
   background-attachment: fixed;
-  display: table;
-  object-fit: cover;
+  /* display: table;
+  object-fit: cover; */
 }
 
 /* padding: 20px;
@@ -33,7 +33,7 @@ margin-bottom: 60px;
   background-size: cover;
   background-position: center;
   display: grid;
-    height: 100vh;
+  height: 100vh;
   width: 100%;
   @media (width < 400px) {
     grid-template-rows: 230px 247px 167px;
