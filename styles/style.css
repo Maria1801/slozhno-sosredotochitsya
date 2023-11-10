@@ -10,9 +10,9 @@ html, body {
   background-color: var(--background-color);
   background-attachment: fixed;
   display: table;
-  position: relative;
   min-width: 374px;
   max-width: 1025px;
+  width: 100%;
 }
 
 .header {
