@@ -6,10 +6,11 @@
 
 .page.theme_light {
   --title-color: #ffc2e6;
-  --text-shadow-color: #ff0070;
+  --background-color: #FFF1F7;
+  --text-shadow-color: #FF8DCB;
   --header_text-color: #353430;
   --header_text-bc: #ff8dcb;
-  --background-image: url('../images/cover-image-light.png');
+  --background-image: url(../images/cover-image-light.png);;
   --border-color: rgba(50, 49, 45, 0.4);
   --title-content: #353430;
   --text-color: #353430;
@@ -27,7 +28,7 @@
   :root {
     /* Дублируем переменные светлой темы */
     --title-color: #ffc2e6;
-    --text-shadow-color: #ff0070;
+    --text-shadow-color: #FF8DCB;
     --header_text-color: #353430;
     --header_text-bc: #ff8dcb;
     --header-image: url(../images/cover-image-light.png);

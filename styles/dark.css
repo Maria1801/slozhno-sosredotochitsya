@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  --bc-c:#000028;
   --title-color:#DB00FF;
   --text-shadow-color:#FF0070;
   --header_text-color:#000028;
@@ -20,4 +21,5 @@
   --dot:#FF0070;
   --rec:block;
   --dot_1: '●';
+  --background-color:#000028;
 } 
