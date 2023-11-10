@@ -580,10 +580,7 @@ html, body {
 }
 
 .footer {
-  /* background-image: var(--background-image);
-  background-size: cover;
-  background-position: center; */
-  display: grid;
+  /* display: grid; */
   height: 100%;
   @media (width < 400px) {
     grid-template-rows: 230px 247px 167px;
