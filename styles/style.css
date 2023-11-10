@@ -14,7 +14,7 @@
   display: grid;
   height: 100%;
   @media (width < 400px) {
-    grid-template-rows: 238px 247px 160px;
+    grid-template-rows: 230px 250px 164px;
     padding: 10px 10px 10px 0;
     height: 678px;
     width: 375px;
@@ -71,8 +71,8 @@
   font-size: 20px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decorate);
-  border-inline-end: 1px solid var(--decorate);
+  border-top: 1px solid var(--color-button);
+  border-inline-end: 1px solid var(--color-button);
   justify-content: center;
   align-items: center;
   color: var(--dot);
@@ -86,8 +86,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decorate);
-  border-left: 1px solid var(--decorate);
+  border-bottom: 1px solid var(--color-button);
+  border-left: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-left: 10px;
     margin-top: -20px;
@@ -108,8 +108,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decorate);
-  border-inline-end: 1px solid var(--decorate);
+  border-top: 1px solid var(--color-button);
+  border-inline-end: 1px solid var(--color-button);
   margin-top: 80px;
   @media (width < 400px) {
     margin-right: 10px;
@@ -354,7 +354,7 @@
   margin-bottom: 20px;
   margin-top: 80px;
   @media (width < 400px) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
@@ -363,6 +363,7 @@
 
 .text_second_card {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .content_info {
@@ -502,7 +503,6 @@
   line-height: 23.4px;
   @media (width < 400px) {
     margin-bottom: 10px;
-    /* margin-top: 10px;  */
   }
 }
 
@@ -590,8 +590,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--decorate);
-  border-right: 1px solid var(--decorate);
+  border-top: 1px solid var(--color-button);
+  border-right: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-top: 40px;
     margin-left: 330px;
@@ -615,8 +615,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--decorate);
-  border-left: 1px solid var(--decorate);
+  border-bottom: 1px solid var(--color-button);
+  border-left: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-top: 250px;
   }
