@@ -17,15 +17,13 @@
   @media (width < 400px) {
     margin: 10px 10px 10px 0;
     height: 668px;
+    width: 355px;
   }
-  @media (width > 400px) {
-    margin: 20px;
-    min-height: 768px;
-  }
+
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 350px;
     grid-template-rows: 260px 300px;
-    gap: 80px;
+    margin: 20px 20px 0px 20px;
+    width: 728px;
   }
 
   @media (width > 1000px) {
@@ -43,7 +41,7 @@
     height: 26px;
     display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 147px;
     align-items: flex-end;
   }
 
@@ -89,8 +87,8 @@
     margin-left: 10px;
     margin-top: -20px;
   }
-  @media (width > 400px) {
-    margin-left: 20px;
+  @media (width > 400px) and (width < 1000px) {
+    margin-top: 138px;
     margin-bottom: 80px;
   }
 }
@@ -194,6 +192,8 @@
 
   @media (width > 400px) and (width < 1000px) {
     font-size: 120px;
+    margin-top: 173px;
+    margin-left: -20px;
   }
 }
 
@@ -219,6 +219,7 @@
     max-width: 364px;
     max-height: 117px;
     justify-self: end;
+    margin-top: 162px;
   }
 
   @media (width > 1000px) {
@@ -235,12 +236,14 @@
     grid-template-rows: auto auto auto;
     margin-left: 10px;
     margin-right: 10px;
+    width: 355px;
   }
-  @media (width > 400px) {
+  @media (width > 400px) and (width < 1000px) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 19px;
+    width: 728px;
   }
 }
 
@@ -270,11 +273,18 @@
   gap: 20px;
   @media (width > 400px) and (width < 1000px) {
     width: 472px;
+    grid-template-rows: 23px auto auto;
   }
   @media (width < 400px) {
     grid-template-rows: 23px auto auto;
     margin-top: 20px;
     gap: 10px;
+  }
+}
+
+.second_card {
+  @media (width > 400px) and (width < 1000px) {
+    width: 728px;
   }
 }
 
@@ -289,6 +299,10 @@
     grid-template-columns: auto;
     margin-left: 10px;
     margin-right: 10px;
+    width: 355px;
+  }
+  @media (width > 400px) and (width < 1000px) {
+    width: 728px;
   }
 }
 
@@ -305,6 +319,9 @@
   @media (width < 400px) {
     margin-top: 50px;
   }
+  @media (width > 400px) and (width < 1000px) {
+    width: 236px;
+  }
 }
 
 .content_info {
@@ -318,6 +335,10 @@
     grid-template-rows: auto auto auto;
     margin-left: 10px;
     margin-right: 10px;
+    width: 355px;
+  }
+  @media (width > 400px) and (width < 1000px) {
+    width: 728px;
   }
 }
 
@@ -340,6 +361,7 @@
   line-height: 23.4px;
   @media (width > 400px) {
     margin-left: 20px;
+    width: 236px;
   }
   @media (width < 400px) {
     margin-top: -50px;
@@ -350,6 +372,7 @@
 .pictures_wrapper {
   display: grid;
   grid-column: 1 / -1;
+  width: 355px;
   @media (width > 400px) and (width < 1000px) {
     width: 728px;
   }
@@ -470,19 +493,21 @@
 }
 
 .footer {
-  display: flex;
-  /* flex-direction: column;
+  /* display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
-  min-height: 768px;
+  align-items: center;  */
+  /* min-height: 768px;  */
+  @media (width > 400px) and (width < 1000px) {
+    width: 768px;
+    height: 1024px;
+    margin-bottom: 20px;
+  }
   @media (width < 400px) {
     margin-left: 10px;
     margin-right: 10px;
     height: 668px;
-  }
-  @media (width > 400px) and (width < 1000px) {
-    width: 768px;
-    height: 1024px;
+    width: 355px;
   }
 }
 .footer_title {
@@ -495,8 +520,12 @@
   line-height: 82.5%;
   @media (width < 400px) {
     font-size: 116px;
-    margin-top: 326px;
+    margin-top: 251px;
     height: 96px;
+  }
+  @media (width > 400px) and (width < 1000px) {
+    margin-top: 418px;
+    margin-left: 150px;
   }
 }
 .right_corner_second {
@@ -507,6 +536,11 @@
   border-right: 1px solid var(--decor);
   @media (width < 400px) {
     margin-top: 40px;
+    margin-left: 330px;
+  }
+  @media (width > 400px) and (width < 1000px) {
+    margin-top: 80px;
+    margin-left: 725px;
   }
 }
 
@@ -522,8 +556,10 @@
   border-bottom: 1px solid var(--decor);
   border-left: 1px solid var(--decor);
   @media (width < 400px) {
-    margin-top: 672px;
+    margin-top: 250px;
   }
-  @media (width > 400px) {
+  @media (width > 400px) and (width < 1000px) {
+    margin-top: 417px;
+    margin-left: 20px;
   }
 }
