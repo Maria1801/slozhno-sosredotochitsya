@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   background-color: var(--background-color);
+  background-attachment: fixed;
   display: table;
   overflow-x: hidden;
   margin: 0 auto;
@@ -10,7 +11,6 @@
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: grid;
   height: 100%;
   @media (width < 400px) {
@@ -534,11 +534,7 @@
 }
 
 .footer {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  */
-  /* min-height: 768px;  */
+  height: 100%;
   @media (width > 400px) and (width < 1000px) {
     width: 768px;
     height: 1024px;
