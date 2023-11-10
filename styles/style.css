@@ -581,20 +581,24 @@ html, body {
 
 .footer {
   min-height: 100%;
+  /* padding-bottom: 20px; */
   @media (width > 400px) and (width < 1000px) {
+    padding-top: 80px;
     width: 768px;
-    height: 1004px;
+    height: 1064px;
   }
   @media (width < 400px) {
+    padding-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 668px;
+    height: 708px;
     width: 355px;
   }
   @media (width > 1000px) {
-    width: 984px;
+    width: 1024px;
+    padding-top: 80px;
     margin-bottom: 20px;
-    height: 726px;
+    height: 798px;
   }
 }
 .footer_title {
@@ -627,15 +631,12 @@ html, body {
   border-top: 1px solid var(--color-button);
   border-right: 1px solid var(--color-button);
   @media (width < 400px) {
-    padding-top: 50px;
     margin-left: 330px;
   }
   @media (width > 400px) and (width < 1000px) {
-    padding-top: 80px;
     margin-left: 725px;
   }
   @media (width > 1000px) {
-    padding-top: 80px;
     margin-left: 979px;
   }
 }
@@ -652,14 +653,14 @@ html, body {
   border-bottom: 1px solid var(--color-button);
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
-    margin-top: 245px;
+    margin-top: 225px;
   }
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 417px;
+    margin-top: 397px;
     margin-left: 20px;
   }
   @media (width > 1000px) {
-    margin-top: 284px;
+    margin-top: 264px;
     margin-left: 20px;
   }
 }
