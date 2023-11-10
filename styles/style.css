@@ -162,13 +162,13 @@
 .header__theme-menu-list {
   @media (width > 400px) and (width < 1000px) {
     display: flex;
-    gap: 13px;
+    gap: 15px;
     flex-direction: column;
   }
 
   @media (width < 400px) {
     display: flex;
-    gap: 10px;
+    gap: 13px;
     flex-direction: column;
   }
 
@@ -187,7 +187,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  /* margin-left: 10px; */
 
   @media (width < 400px) {
     font-size: 116px;
