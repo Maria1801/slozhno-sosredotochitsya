@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 100%;
 } 
 
 .page {
@@ -581,9 +580,9 @@ html, body {
 }
 
 .footer {
-  background-image: var(--background-image);
+  /* background-image: var(--background-image);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: grid;
   height: 100%;
   @media (width < 400px) {
