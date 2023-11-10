@@ -580,7 +580,7 @@ html, body {
 }
 
 .footer {
-  
+  display: flex;
   min-height: 768px;
   /* padding-bottom: 20px; */
   background-size: cover;
