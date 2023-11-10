@@ -581,8 +581,7 @@ html, body {
 
 .footer {
   height: 100%;
-  display: flex;
-  min-height: 100vh;
+  min-height: 768px;
   /* padding-bottom: 20px; */
   background-size: cover;
   background-position: center;
