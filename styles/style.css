@@ -12,6 +12,7 @@ html, body {
   display: table;
   position: relative;
   min-width: 374px;
+  max-width: 1025px;
 }
 
 .header {
