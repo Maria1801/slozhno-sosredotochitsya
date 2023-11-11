@@ -1,8 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-} 
+}
 
 .page {
   background-color: var(--background-color);
@@ -91,10 +92,10 @@ html, body {
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-left: 10px;
-  margin-block-start: -20px;
+    margin-block-start: -20px;
   }
   @media (width > 400px) and (width < 1000px) {
-  margin-block-start: 138px;
+    margin-block-start: 138px;
     margin-bottom: 80px;
   }
 }
@@ -111,10 +112,10 @@ html, body {
   height: 25px;
   border-top: 1px solid var(--color-button);
   border-inline-end: 1px solid var(--color-button);
-margin-block-start: 80px;
+  margin-block-start: 80px;
   @media (width < 400px) {
     margin-right: 10px;
-  margin-block-start: 50px;
+    margin-block-start: 50px;
   }
   @media (width > 400px) {
     margin-right: 20px;
@@ -157,7 +158,7 @@ margin-block-start: 80px;
   }
   margin-right: 34%;
   @media (width < 400px) {
-  margin-block-start: 40px;
+    margin-block-start: 40px;
   }
 }
 
@@ -191,7 +192,7 @@ margin-block-start: 80px;
   }
   @media (width > 400px) and (width < 1000px) {
     font-size: 120px;
-  margin-block-start: 183px;
+    margin-block-start: 183px;
     margin-left: -20px;
   }
   @media (width > 1000px) {
@@ -219,7 +220,7 @@ margin-block-start: 80px;
     max-width: 364px;
     max-height: 117px;
     justify-self: end;
-  margin-block-start: 138px;
+    margin-block-start: 138px;
   }
   @media (width > 1000px) {
     max-width: 491px;
@@ -233,7 +234,7 @@ margin-block-start: 80px;
   @media (width < 400px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-  margin-block-start: 30px;
+    margin-block-start: 30px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
@@ -250,7 +251,7 @@ margin-block-start: 80px;
     grid-template-rows: auto auto;
     gap: 19px;
     width: 984px;
-  margin-block-start: 60px;
+    margin-block-start: 60px;
   }
 }
 
@@ -280,7 +281,7 @@ margin-block-start: 80px;
     width: 472px;
   }
   @media (width < 400px) {
-  margin-block-start: 20px;
+    margin-block-start: 20px;
   }
   @media (width > 1000px) {
     width: 649px;
@@ -332,17 +333,17 @@ margin-block-start: 80px;
   font-weight: 700;
   line-height: 23.4px;
   @media (width < 400px) {
-  margin-block-start: 40px;
+    margin-block-start: 40px;
     margin-bottom: 0px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
-  margin-block-start: 65px;
+    margin-block-start: 65px;
     margin-bottom: 0px;
   }
   @media (width > 1000px) {
     width: 315px;
-  margin-block-start: 60px;
+    margin-block-start: 60px;
     margin-bottom: 20px;
   }
 }
@@ -350,10 +351,10 @@ margin-block-start: 80px;
 .top_wrapper {
   margin-bottom: 10px;
   @media (width < 400px) {
-  margin-block-start: 20px;
+    margin-block-start: 20px;
   }
   @media (width > 400px) and (width < 1000px) {
-  margin-block-start: 20px;
+    margin-block-start: 20px;
   }
 }
 
@@ -377,7 +378,7 @@ margin-block-start: 80px;
 
 .card_second {
   @media (width < 400px) {
-  margin-block-start: -10px;
+    margin-block-start: -10px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 472px;
@@ -397,7 +398,7 @@ margin-block-start: 80px;
     width: 236px;
   }
   @media (width < 400px) {
-  margin-block-start: -40px;
+    margin-block-start: -40px;
     height: 70px;
   }
 }
@@ -407,11 +408,11 @@ margin-block-start: 80px;
   grid-column: 1 / -1;
   @media (width > 400px) and (width < 1000px) {
     width: 728px;
-  margin-block-start: 59px;
+    margin-block-start: 59px;
     gap: 20px;
   }
   @media (width < 400px) {
-  margin-block-start: 40px;
+    margin-block-start: 40px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
@@ -421,14 +422,14 @@ margin-block-start: 80px;
     margin-right: 20px;
   }
   @media (width > 1000px) {
-  margin-block-start: 63px;
+    margin-block-start: 63px;
     gap: 20px;
   }
 }
 
 .pictures {
   @media (width < 400px) {
-  margin-block-start: 10px;
+    margin-block-start: 10px;
     display: grid;
     gap: 10px;
     grid-template-rows: 142px 355px 237px 355px 237px;
@@ -515,10 +516,10 @@ margin-block-start: 80px;
 
 .title_card_top {
   @media (width > 400px) and (width < 1000px) {
-  margin-block-start: 10px;
+    margin-block-start: 10px;
   }
   @media (width > 1000px) {
-  margin-block-start: 10px;
+    margin-block-start: 10px;
   }
 }
 
@@ -553,7 +554,7 @@ margin-block-start: 80px;
 
   @media (width > 400px) and (width < 1000px) {
     grid-template-rows: 25px 570px 25px;
-    padding: 20px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     width: 768px;
     height: 1085px;
   }
@@ -575,16 +576,16 @@ margin-block-start: 80px;
   line-height: 82.5%;
   @media (width < 400px) {
     font-size: 116px;
-  margin-block-start: 270px;
+    margin-block-start: 270px;
     height: 96px;
   }
   @media (width > 400px) and (width < 1000px) {
-  margin-block-start: 418px;
+    margin-block-start: 418px;
     margin-left: 180px;
     font-size: 120px;
   }
   @media (width > 1000px) {
-  margin-block-start: 264px;
+    margin-block-start: 264px;
     margin-left: 267px;
   }
 }
@@ -617,29 +618,28 @@ margin-block-start: 80px;
   border-bottom: 1px solid var(--color-button);
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
-  margin-block-start: 225px;
+    margin-block-start: 225px;
   }
   @media (width > 400px) and (width < 1000px) {
-  margin-block-start: 397px;
+    margin-block-start: 397px;
   }
   @media (width > 1000px) {
-  margin-block-start: 264px;
+    margin-block-start: 264px;
   }
 }
 
 .link:focus {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .link:hover {
-text-decoration: underline;
-}
-
-.link:focus-visible {
-  border: 1px solid var(--link-border); 
+  text-decoration: underline;
 }
 
 .link {
   text-decoration: none;
 }
 
+.link:focus-visible {
+  border: 1px solid var(--link-border);
+}
