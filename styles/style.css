@@ -269,6 +269,7 @@ body {
     gap: 19px;
     width: 728px;
     margin-left: 20px;
+    margin-top: 60px;
   }
   @media (width > 1000px) {
     grid-template-columns: 1fr 2fr;
@@ -415,6 +416,9 @@ body {
   }
   @media (width < 400px) {
     margin-block-start: -40px;
+  }
+  @media (width > 400px) and (width < 1000px) {
+    width: 236px;
   }
 }
 
