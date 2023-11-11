@@ -12,9 +12,10 @@
   --title-card-info:#000028;
   --color-button:#FF0070;
   --border-color:rgba(255, 0, 112, 0.40);
-  --dot:#FF0070;
+  --dot-color:#FF0070;
   --rec:block;
-  --dot_1: '●';
+  --dot: '●';
   --background-color:#000028;
-  --link-border: #F1B2CE;
+  --br-active:#FF0070;
+  --button: #FF0070;
 }
