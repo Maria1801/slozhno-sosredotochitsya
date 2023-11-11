@@ -575,8 +575,8 @@ body {
     grid-template-rows: 25px 404px 25px;
     padding: 80px 20px 20px 20px;
     width: 1024px;
-    height: 1024px;
-    min-height: 1024px;
+    height: 768px;
+    min-height: 768px;
   }
 }
 .footer_title {
