@@ -1,7 +1,6 @@
 
 :root {
   /* Переменные тёмной темы */
-  --bc-c:#000028;
   --title-color:#DB00FF;
   --text-shadow-color:#FF0070;
   --header_text-color:#000028;
@@ -17,4 +16,5 @@
   --rec:block;
   --dot_1: '●';
   --background-color:#000028;
+  --link-border: #F1B2CE;
 }

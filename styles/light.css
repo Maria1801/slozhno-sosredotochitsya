@@ -22,8 +22,6 @@
   --dot_1: "";
 }
 
-/* Остальные стили */
-
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
@@ -40,6 +38,7 @@
     --title-card-info: #353430;
     --color-button: #353430;
     --rec: none;
-    --dot_1: "";
+    --dot: "";
+    --link-border: #353430;
   }
 }

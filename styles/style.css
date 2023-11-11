@@ -8,7 +8,6 @@ html, body {
   background-color: var(--background-color);
   background-attachment: fixed;
   object-fit: cover;
-  /* display: table; */
 }
 
 .header {
@@ -26,14 +25,12 @@ html, body {
     height: 678px;
     width: 375px;
   }
-
   @media (width > 400px) and (width < 1000px) {
     grid-template-rows: 270px 300px;
     padding: 20px 20px 0px 20px;
     width: 768px;
     height: 1085px;
   }
-
   @media (width > 1000px) {
     grid-template-rows: 300px 244px 160px 25px;
     padding: 20px 20px 0px 20px;
@@ -55,12 +52,10 @@ html, body {
     gap: 147px;
     align-items: flex-end;
   }
-
   @media (width > 1000px) {
     height: 26px;
     display: flex;
     flex-direction: row-reverse;
-    /* gap: 329px; */
     align-items: center;
     justify-content: flex-start;
   }
@@ -81,11 +76,11 @@ html, body {
   border-inline-end: 1px solid var(--color-button);
   justify-content: center;
   align-items: center;
-  color: var(--dot);
+  color: var(--dot-color);
 }
 
 .dot_wrapper::after {
-  content: var(--dot_1);
+  content: var(--dot);
 }
 
 .left_corner {
@@ -96,10 +91,10 @@ html, body {
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-left: 10px;
-    margin-top: -20px;
+  margin-block-start: -20px;
   }
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 138px;
+  margin-block-start: 138px;
     margin-bottom: 80px;
   }
 }
@@ -116,10 +111,10 @@ html, body {
   height: 25px;
   border-top: 1px solid var(--color-button);
   border-inline-end: 1px solid var(--color-button);
-  margin-top: 80px;
+margin-block-start: 80px;
   @media (width < 400px) {
     margin-right: 10px;
-    margin-top: 50px;
+  margin-block-start: 50px;
   }
   @media (width > 400px) {
     margin-right: 20px;
@@ -162,25 +157,21 @@ html, body {
   }
   margin-right: 34%;
   @media (width < 400px) {
-    margin-top: 40px;
+  margin-block-start: 40px;
   }
 }
 
 .header__theme-menu-list {
+  display: flex;
   @media (width > 400px) and (width < 1000px) {
-    display: flex;
     gap: 15px;
     flex-direction: column;
   }
-
   @media (width < 400px) {
-    display: flex;
     gap: 15px;
     flex-direction: column;
   }
-
   @media (width > 1000px) {
-    display: flex;
     flex-direction: row;
     gap: 10px;
   }
@@ -194,19 +185,15 @@ html, body {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-
   @media (width < 400px) {
     font-size: 116px;
     margin-left: 10px;
-    /* margin-top: 58px; */
   }
-
   @media (width > 400px) and (width < 1000px) {
     font-size: 120px;
-    margin-top: 183px;
+  margin-block-start: 183px;
     margin-left: -20px;
   }
-
   @media (width > 1000px) {
     margin-left: -20px;
   }
@@ -223,20 +210,17 @@ html, body {
   max-inline-size: 491px;
   max-block-size: 71px;
   justify-self: center;
-
   @media (width < 400px) {
     max-width: 355px;
     max-height: 117px;
     margin-left: 10px;
   }
-
   @media (width > 400px) and (width < 1000px) {
     max-width: 364px;
     max-height: 117px;
     justify-self: end;
-    margin-top: 138px;
+  margin-block-start: 138px;
   }
-
   @media (width > 1000px) {
     max-width: 491px;
     max-height: 71px;
@@ -245,17 +229,16 @@ html, body {
 }
 
 .first_card_wrapper {
+  display: grid;
   @media (width < 400px) {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    margin-top: 30px;
+  margin-block-start: 30px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
   }
   @media (width > 400px) and (width < 1000px) {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 19px;
@@ -263,12 +246,11 @@ html, body {
     margin-left: 20px;
   }
   @media (width > 1000px) {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 19px;
     width: 984px;
-    margin-top: 60px;
+  margin-block-start: 60px;
   }
 }
 
@@ -280,15 +262,11 @@ html, body {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  @media (width < 400px) {
-    /* margin-top: ; */
-  }
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
   }
   @media (width > 1000px) {
     margin-left: 20px;
-    /* margin-top: ; */
     width: 315px;
   }
 }
@@ -296,19 +274,16 @@ html, body {
 .first_card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 23px auto auto;
   gap: 10px;
   @media (width > 400px) and (width < 1000px) {
     width: 472px;
-    grid-template-rows: 23px auto auto;
   }
   @media (width < 400px) {
-    grid-template-rows: 23px auto auto;
-    margin-top: 20px;
+  margin-block-start: 20px;
   }
   @media (width > 1000px) {
     width: 649px;
-    grid-template-rows: 23px auto auto;
   }
 }
 
@@ -339,7 +314,6 @@ html, body {
     width: 355px;
   }
   @media (width > 400px) and (width < 1000px) {
-    /* margin-top: -10px; */
     width: 728px;
   }
   @media (width > 1000px) {
@@ -357,35 +331,29 @@ html, body {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  margin-bottom: 10px;
-  margin-top: 80px;
   @media (width < 400px) {
-    margin-top: 40px;
+  margin-block-start: 40px;
     margin-bottom: 0px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 236px;
-    margin-top: 65px;
+  margin-block-start: 65px;
     margin-bottom: 0px;
   }
   @media (width > 1000px) {
     width: 315px;
-    margin-top: 60px;
+  margin-block-start: 60px;
     margin-bottom: 20px;
   }
 }
 
-.margin_top {
+.top_wrapper {
+  margin-bottom: 10px;
   @media (width < 400px) {
-    margin-top: 20px;
-    margin-bottom: 10px;
+  margin-block-start: 20px;
   }
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  @media (width > 1000px) {
-    margin-bottom: 10px;
+  margin-block-start: 20px;
   }
 }
 
@@ -409,7 +377,7 @@ html, body {
 
 .card_second {
   @media (width < 400px) {
-    margin-top: -10px;
+  margin-block-start: -10px;
   }
   @media (width > 400px) and (width < 1000px) {
     width: 472px;
@@ -429,7 +397,7 @@ html, body {
     width: 236px;
   }
   @media (width < 400px) {
-    margin-top: -40px;
+  margin-block-start: -40px;
     height: 70px;
   }
 }
@@ -439,11 +407,11 @@ html, body {
   grid-column: 1 / -1;
   @media (width > 400px) and (width < 1000px) {
     width: 728px;
-    margin-top: 59px;
+  margin-block-start: 59px;
     gap: 20px;
   }
   @media (width < 400px) {
-    margin-top: 40px;
+  margin-block-start: 40px;
     margin-left: 10px;
     margin-right: 10px;
     width: 355px;
@@ -453,14 +421,14 @@ html, body {
     margin-right: 20px;
   }
   @media (width > 1000px) {
-    margin-top: 63px;
+  margin-block-start: 63px;
     gap: 20px;
   }
 }
 
 .pictures {
   @media (width < 400px) {
-    margin-top: 10px;
+  margin-block-start: 10px;
     display: grid;
     gap: 10px;
     grid-template-rows: 142px 355px 237px 355px 237px;
@@ -542,25 +510,15 @@ html, body {
   font-weight: 700;
   line-height: 23.4px;
   background-color: var(--header_text-bc);
-  /* margin-bottom: 20px; */
-  @media (width < 400px) {
-    height: 23px;
-  }
-  @media (width > 400px) and (width < 1000px) {
-    height: 23px;
-  }
-  @media (width > 1000px) {
-    height: 23px;
-    /* margin-bottom: 20px; */
-  }
+  height: 23px;
 }
 
-.title_card_margin {
+.title_card_top {
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 10px;
+  margin-block-start: 10px;
   }
   @media (width > 1000px) {
-    margin-top: 10px;
+  margin-block-start: 10px;
   }
 }
 
@@ -617,16 +575,16 @@ html, body {
   line-height: 82.5%;
   @media (width < 400px) {
     font-size: 116px;
-    margin-top: 270px;
+  margin-block-start: 270px;
     height: 96px;
   }
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 418px;
+  margin-block-start: 418px;
     margin-left: 180px;
     font-size: 120px;
   }
   @media (width > 1000px) {
-    margin-top: 264px;
+  margin-block-start: 264px;
     margin-left: 267px;
   }
 }
@@ -635,7 +593,7 @@ html, body {
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--color-button);
-  border-right: 1px solid var(--color-button);
+  border-inline-end: 1px solid var(--color-button);
   @media (width < 400px) {
     margin-left: 330px;
   }
@@ -659,14 +617,29 @@ html, body {
   border-bottom: 1px solid var(--color-button);
   border-left: 1px solid var(--color-button);
   @media (width < 400px) {
-    margin-top: 225px;
+  margin-block-start: 225px;
   }
   @media (width > 400px) and (width < 1000px) {
-    margin-top: 397px;
-    /* margin-left: 20px; */
+  margin-block-start: 397px;
   }
   @media (width > 1000px) {
-    margin-top: 264px;
-    /* margin-left: 20px; */
+  margin-block-start: 264px;
   }
 }
+
+.link:focus {
+text-decoration: none;
+}
+
+.link:hover {
+text-decoration: underline;
+}
+
+.link:focus-visible {
+  border: 1px solid var(--link-border); 
+}
+
+.link {
+  text-decoration: none;
+}
+
