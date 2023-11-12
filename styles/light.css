@@ -21,6 +21,7 @@
     --dot: "";
     --br-active:#353430;
     --button: #353430;
+    --standart-ff: "IBM Plex Mono", Arial, serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,5 +43,6 @@
     --dot: "";
     --br-active:#353430;
     --button: #353430;
+    --standart-ff: "IBM Plex Mono", Arial, serif;
 }
 }
